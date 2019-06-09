@@ -123,3 +123,4 @@ class HomeController
     }
 }
 ```
+**路由使用** websocket发送消息格式为 `home.ar:"123123"` 则由消息路由解析到对应注解下的Home控制器 ar方法
