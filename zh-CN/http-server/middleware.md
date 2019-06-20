@@ -43,7 +43,9 @@ class ControllerMiddleware implements MiddlewareInterface
 ```php
 return [
     ...
-    'httpDispatcher'=>[
+    //'serviceDispatcher'=>[  //rpc相关全局中间件
+    //'wsDispatcher'=>[  //websocket相关全局中间件
+    'httpDispatcher'=>[  //http全局中间件
         'middlewares'=>[
             AuthMiddleware::class,
             ApiMiddleware::class
